@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+footer  p{
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    .row {
+        text-align: center; 
+    }
+
+    .row > div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

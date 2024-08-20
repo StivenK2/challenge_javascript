@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="public/css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="public/css/estilos.css" />
+</head>
+
+<body>
+  <main>
+    <div class="d-flex flex-column min-vh-100">
+      <nav>
+        <h1>Encriptador de texto</h1>
+      </nav>
+      <div class="container mt-5">
+        <div class="col-12 col-md-8 d-flex justify-content-md-end mb-3">
+          <p>Ingrese caracteres numéricos y caracteres en minúscula!!</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <textarea id="texto" class="form-control" rows="10" placeholder="Ingrese texto"></textarea>
+          </div>
+          <div class="col-md-6 mb-3">
+            <textarea id="textoen" class="form-control" rows="10" placeholder="" readonly></textarea>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-4 d-flex justify-content-md-start mb-3">
+              <button class="btn btn-primary" onclick="encriptartexto()">Encriptar</button>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-center mb-3">
+              <button id="des" class="btn btn-secondary" onclick="desencriptartexto()" disabled>Desencriptar</button>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end mb-3">
+              <button class="btn btn-outline-primary" onclick="copiar()">Copiar</button>
+            </div>
+          </div>
+        </div>
+        <div id="mensaje" style="display: none; color: rgb(128, 0, 11); margin-top: 10px;">¡Mensaje copiado!</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <p>Copyright 2024 &copy; David Vasquez</p>
+
+  </footer>
+
+  <script src="public/js/jquery-3.7.1.min.js"></script>
+  <script src="public/js/popper.min.js"></script>
+  <script src="public/js/funcionalidad.js"></script>
+
+</body>
+</body>
+
+</html>
